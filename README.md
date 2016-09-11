@@ -19,15 +19,16 @@
 2. 切片(`facet`), 透视(`facet.pivot`)和统计关联(`{stats}`)
 3. 统计(`stats`), 以及如何定义统计标签(`{tag}`)
 
-> https://www.apache.org/dyn/closer.lua/lucene/solr/ref-guide/ 提供了PDF格式的参考手册. 请自动下载学习.
+> _**参考文档:**_
 > 
-> https://cwiki.apache.org/confluence/display/solr/Faceting#Faceting-CombiningStatsComponentWithPivots 提供了如何结合stats和facet pivot两个组件工作的说明和示例.
-> 
-> Woda基于PECL Solr 2.0开发, API文档位于http://php.net/manual/en/book.solr.php, 如果对细节实现有兴趣, 请先掌握该扩展模块的使用.
+> * https://www.apache.org/dyn/closer.lua/lucene/solr/ref-guide/ 提供了PDF格式的参考手册. 请自动下载学习.
+> * https://cwiki.apache.org/confluence/display/solr/Faceting#Faceting-CombiningStatsComponentWithPivots 提供了如何结合stats和facet pivot两个组件工作的说明和示例.
+> * Woda基于PECL Solr 2.0开发, API文档位于http://php.net/manual/en/book.solr.php, 如果对细节实现有兴趣, 请先掌握该扩展模块的使用.
 
 ## 示例设计
 
 假设需要如下的透视表:
+
 1. 使用`天(Day)` 和 `班次(Schedule)`(例如: 早班, 晚班)进行行分组
 2. 使用 `子部门(SubDept)` 和 `付款类型(PayType)`进行两级的列分组
 3. 统计`订单数量 - count(Order)` 和 `订单金额 - sum(Amount)`
