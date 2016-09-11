@@ -1,6 +1,6 @@
 # Woda
 ## 背景说明
-从Solr 5.x 开始, Povit 和 Stat两组件可以协同工作了. 这意味着我们可以利用Solr实现复杂的数据透视表所需要的分组统计功能. 
+从Solr 5.1 开始, Povit 和 Stat两组件可以协同工作了. 这意味着我们可以利用Solr实现复杂的数据透视表所需要的分组统计功能. 
 
 基于这一功能特性, 我们可以实现大范围数据的统计, 和动态分析报表. Woda(Wobase Data Analysis和简称)就是基于这一项新的基础功能而实现的.
 
@@ -18,9 +18,11 @@
 2. 切片(`facet`), 透视(`facet.pivot`)和统计关联(`{stats}`)
 3. 统计(`stats`), 以及如何定义统计标签(`{tag}`)
 
-https://www.apache.org/dyn/closer.lua/lucene/solr/ref-guide/ 提供了PDF格式的参考手册. 请自动下载学习.
-
-Woda基于PECL Solr 2.0开发, API文档位于http://php.net/manual/en/book.solr.php, 如果对细节实现有兴趣, 请先掌握该扩展模块的使用.
+> https://www.apache.org/dyn/closer.lua/lucene/solr/ref-guide/ 提供了PDF格式的参考手册. 请自动下载学习.
+> 
+> https://cwiki.apache.org/confluence/display/solr/Faceting#Faceting-CombiningStatsComponentWithPivots 提供了如何结合stats和facet pivot两个组件工作的说明和示例.
+> 
+> Woda基于PECL Solr 2.0开发, API文档位于http://php.net/manual/en/book.solr.php, 如果对细节实现有兴趣, 请先掌握该扩展模块的使用.
 
 ## 示例设计
 
